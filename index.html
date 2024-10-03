@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger GandyamPay</title>
+</head>
+<body>
+    <h1>Téléchargez GandyamPay</h1>
+    <p>Téléchargez notre application sur votre plateforme préférée :</p>
+    <a href="#" onclick="openAppStore()">https://app-gandyampay.com/</a>
+
+    <script>
+        function openAppStore() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Vérifie si l'utilisateur est sur un appareil iOS
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/bf/app/gandyam-pay/id6476113067"; // Remplacez par l'ID de votre app
+            }
+            // Vérifie si l'utilisateur est sur un appareil Android
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.gandyampay.main_app&hl=fr"; // Remplacez par le package de votre app
+            }
+            // Si l'appareil n'est ni Android ni iOS
+            else {
+                alert("Veuillez ouvrir ce lien sur un appareil mobile.");
+            }
+        }
+    </script>
+</body>
+</html>
