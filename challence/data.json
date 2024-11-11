@@ -1,0 +1,23 @@
+[
+    {
+        "currency_from": "CAD",
+        "rate": "439",
+        "currency_to": "CFA"
+    },
+    {
+        "currency_from": "CAD",
+        "rate": "439",
+        "currency_to": "cfa"
+      }
+      ,{
+        "message": "Taux de change rafraîchis avec succès!",
+        "data": {
+          "currency_from": "CAD",
+          "rate": "439",
+          "currency_to": "cfa"
+        }
+      }
+      
+
+
+]
